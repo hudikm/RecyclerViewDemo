@@ -2,7 +2,6 @@ package sk.fri.uniza.recyclerviewdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import sk.fri.uniza.recyclerviewdemo.model.Recipe;
 
