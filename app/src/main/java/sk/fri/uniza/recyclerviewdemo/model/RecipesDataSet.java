@@ -10,7 +10,12 @@ import java.util.List;
 import sk.fri.uniza.recyclerviewdemo.utilities.LoadData;
 
 public class RecipesDataSet {
-
+    /**
+     * Slúži na získanie uložených receptov
+     *
+     * @param context aplikačný kontext
+     * @return list načítaných receptov
+     */
     public static List<Recipe> getRecipes(Context context) {
         if (recipes == null) {
             try {
