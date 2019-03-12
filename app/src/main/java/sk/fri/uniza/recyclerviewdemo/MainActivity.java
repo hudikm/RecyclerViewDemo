@@ -4,12 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import sk.fri.uniza.recyclerviewdemo.model.RecipesDataSet;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyRecipeRecyclerViewAdapter.OnRecipeListInteraction {
 
+
+    @Override
+    public void onRecipeClick(int position) {
+        Toast.makeText(this, RecipesDataSet.getRecipes(this).get(position).title, Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
         MyRecipeRecyclerViewAdapter mAdapter = new MyRecipeRecyclerViewAdapter(RecipesDataSet.getRecipes(this), this);
         recyclerView.setAdapter(mAdapter);
-    }
 
+    }
 
 }
