@@ -1,0 +1,36 @@
+# Project info
+site_name: RecyclerView
+
+# Repository
+repo_name: 'RecyclerViewDemo'
+repo_url: 'https://github.com/hudikm/RecyclerViewDemo'
+
+nav:
+ - Úvod: index.md
+ - Nový projekt: new_project.md
+ - Postup implementácie RecyclerView: recyclerview_prve_kroky.md
+ - Interakcia RecyclerView s Aktivitou: onItemClick.md
+ - Fragmenty: fragmenty.md
+ - Project na Github-e: https://github.com/hudikm/RecyclerViewDemo
+theme: 
+   name: 'material'
+   language: 'sk'
+   font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+markdown_extensions:
+  - markdown.extensions.smarty:
+      smart_quotes: false
+  - pymdownx.smartsymbols
+  - admonition
+  - plantuml-markdown
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - codehilite:
+       linenums: true
+       guess_lang: false
+  - fontawesome_markdown
+  - toc:
+      permalink: true
+extra_javascript:
+  - js/mermaid.min.js

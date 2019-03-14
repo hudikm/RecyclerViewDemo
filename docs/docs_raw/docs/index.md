@@ -1,5 +1,8 @@
 # Úvod
-Úlohou cvičenia je vytvoriť aplikáciu, ktorá bude demonštrovať použitie dynamického layoutu a to konkrétne Recycleview. 
+> **Cvičenie** : Úlohou cvičenia je vytvoriť aplikáciu kuchárska kniha, ktorá bude pozostávať z dvoch obrazoviek. Práva hlavná obrazovka bude obsahovať zoznam receptov a druhá bu zobrazovať detail o recepte. Na aplikáciu su kladené tieto požiadavky:
+>
+> 1. Aplikacia použije dynamický layoutu a to konkrétne Recyclerview.  Tento prvok bude zobrazovať zoznam receptov.
+> 2. Obrazovky uživatelského rozhrania budú tvorené z dvoch fragmentov: ListFagment, DetailFragment. 
 
 ## Čo je to Recycleview?
 - RecyclerView je pokročilejšia a flexibilnejšia verzia ListView dynamického layoutu  
@@ -16,7 +19,10 @@
   - GridLayoutManager
   - StaggeredGridLayoutManager
 - Animácie
+!!! info
+	[Viac info o RecyclerView ext. zdroj](https://www.grokkingandroid.com/first-glance-androids-recyclerview)<br/>
+	[Viac info o RecyclerView na developer.android.com](https://developer.android.com/guide/topics/ui/layout/recyclerview)
 
-[RecyclerView]: https://www.grokkingandroid.com/first-glance-androids-recyclerview/	"Viac info o RecyclerView ext. zdroj"
-[RecyclerView]: https://developer.android.com/guide/topics/ui/layout/recyclerview	"Viac info o RecyclerView na developer.android.com"
+
+
 
