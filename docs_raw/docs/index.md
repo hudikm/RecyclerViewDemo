@@ -1,5 +1,5 @@
 # Úvod
-> **Cvičenie** : Úlohou cvičenia je vytvoriť aplikáciu kuchárska kniha, ktorá bude pozostávať z dvoch obrazoviek. Práva, hlavná obrazovka, bude obsahovať zoznam receptov a druhá bu zobrazovať detail o recepte. Na aplikáciu su kladené tieto požiadavky:
+> **Cvičenie** : Úlohou cvičenia je vytvoriť aplikáciu kuchárska kniha, ktorá bude pozostávať z dvoch obrazoviek. Prvá, hlavná obrazovka, bude obsahovať zoznam receptov a druhá bu zobrazovať detail o recepte. Na aplikáciu su kladené tieto požiadavky:
 >
 > 1. Aplikacia použije dynamický layoutu a to konkrétne Recyclerview.  Tento prvok bude zobrazovať zoznam receptov.
 > 2. Obrazovky uživatelského rozhrania budú tvorené z dvoch fragmentov: ListFagment, DetailFragment. 
