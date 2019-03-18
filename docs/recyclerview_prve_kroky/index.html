@@ -280,8 +280,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-pridanie-support-kniznice" title="1. Pridanie support kniznice" class="md-nav__link">
-    1. Pridanie support kniznice
+  <a href="#1-pridanie-support-kniznice" title="1. Pridanie support knižnice" class="md-nav__link">
+    1. Pridanie support knižnice
   </a>
   
 </li>
@@ -437,8 +437,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-pridanie-support-kniznice" title="1. Pridanie support kniznice" class="md-nav__link">
-    1. Pridanie support kniznice
+  <a href="#1-pridanie-support-kniznice" title="1. Pridanie support knižnice" class="md-nav__link">
+    1. Pridanie support knižnice
   </a>
   
 </li>
@@ -564,10 +564,10 @@
 <p>Vytvorte <code>RecyclerView.Adapter</code> a <code>ViewHolder</code> na vykreslenie položky</p>
 </li>
 <li>
-<p>Pripojte adaptér zo zdrojom údajov a nasledne ho odovzdejte RecyclerView</p>
+<p>Pripojte adaptér so zdrojom údajov a nasledne ho odovzdejte RecyclerView</p>
 </li>
 </ol>
-<h2 id="1-pridanie-support-kniznice">1. Pridanie support kniznice<a class="headerlink" href="#1-pridanie-support-kniznice" title="Permanent link">&para;</a></h2>
+<h2 id="1-pridanie-support-kniznice">1. Pridanie support knižnice<a class="headerlink" href="#1-pridanie-support-kniznice" title="Permanent link">&para;</a></h2>
 <p><code>app/build.gradle</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -698,7 +698,7 @@
 </td></tr></table>
 
 <h2 id="3-vytvorenie-recyclerview-v-ramci-layout-subora">3. Vytvorenie RecyclerView v ramci layout súbora<a class="headerlink" href="#3-vytvorenie-recyclerview-v-ramci-layout-subora" title="Permanent link">&para;</a></h2>
-<p>V súbore <code>./main/res/layout/recycler_list_layout.xml</code> vytvorte RecycleView</p>
+<p>V súbore <code>./main/res/layout/recycler_list_layout.xml</code> vytvorte RecyclerView</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -750,36 +750,36 @@
 27
 28
 29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:clickable=&quot;true&quot;
-    android:focusable=&quot;true&quot;
-    android:foreground=&quot;?android:attr/selectableItemBackground&quot;
-    android:orientation=&quot;vertical&quot;&gt;
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:clickable=</span><span class="s">&quot;true&quot;</span>
+    <span class="na">android:focusable=</span><span class="s">&quot;true&quot;</span>
+    <span class="na">android:foreground=</span><span class="s">&quot;?android:attr/selectableItemBackground&quot;</span>
+    <span class="na">android:orientation=</span><span class="s">&quot;vertical&quot;</span><span class="nt">&gt;</span>
 
-    &lt;ImageView
-        android:id=&quot;@+id/smallImage&quot;
-        android:layout_width=&quot;42dp&quot;
-        android:layout_height=&quot;42dp&quot;
-        android:layout_gravity=&quot;center&quot;
-        android:scaleType=&quot;centerCrop&quot;
-        android:textAppearance=&quot;?attr/textAppearanceListItem&quot;
-        tools:srcCompat=&quot;@mipmap/ic_launcher&quot; /&gt;
+    <span class="nt">&lt;ImageView</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/smallImage&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;42dp&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;42dp&quot;</span>
+        <span class="na">android:layout_gravity=</span><span class="s">&quot;center&quot;</span>
+        <span class="na">android:scaleType=</span><span class="s">&quot;centerCrop&quot;</span>
+        <span class="na">android:textAppearance=</span><span class="s">&quot;?attr/textAppearanceListItem&quot;</span>
+        <span class="na">tools:srcCompat=</span><span class="s">&quot;@mipmap/ic_launcher&quot;</span> <span class="nt">/&gt;</span>
 
-    &lt;TextView
-        android:id=&quot;@+id/contentTxt&quot;
-        android:layout_width=&quot;wrap_content&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:layout_gravity=&quot;center&quot;
-        android:layout_marginTop=&quot;2dp&quot;
-        android:gravity=&quot;center&quot;
-        android:textAppearance=&quot;?attr/textAppearanceListItem&quot;
-        tools:text=&quot;recept xy&quot; /&gt;
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/contentTxt&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_gravity=</span><span class="s">&quot;center&quot;</span>
+        <span class="na">android:layout_marginTop=</span><span class="s">&quot;2dp&quot;</span>
+        <span class="na">android:gravity=</span><span class="s">&quot;center&quot;</span>
+        <span class="na">android:textAppearance=</span><span class="s">&quot;?attr/textAppearanceListItem&quot;</span>
+        <span class="na">tools:text=</span><span class="s">&quot;recept xy&quot;</span> <span class="nt">/&gt;</span>
 
-&lt;/LinearLayout&gt;
+<span class="nt">&lt;/LinearLayout&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -876,7 +876,7 @@
 </td></tr></table>
 
 <h3 id="53-ziskanie-a-ulozenie-zoznamu-receptov">5.3 Získanie a uloženie zoznamu receptov<a class="headerlink" href="#53-ziskanie-a-ulozenie-zoznamu-receptov" title="Permanent link">&para;</a></h3>
-<p>Pridajte do triedy <code>MyRecipeRecyclerViewAdapter</code>nový privátny atribút typu <code>List&lt;Recipe&gt; recipes</code> a následneho inicializujte ako parameter konštruktora.</p>
+<p>Pridajte do triedy <code>MyRecipeRecyclerViewAdapter</code>nový privátny atribút typu <code>List&lt;Recipe&gt; recipes</code> a následne ho inicializujte ako parameter konštruktora.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -906,7 +906,7 @@
 </td></tr></table>
 
 <h3 id="54-vytvorenie-ui-zobrazeneho-riadku">5.4 Vytvorenie UI zobrazeného riadku<a class="headerlink" href="#54-vytvorenie-ui-zobrazeneho-riadku" title="Permanent link">&para;</a></h3>
-<p>Užitvateľské rozhranie jedného riadku sa vytvára v metóde <code>onCreateViewHolder</code> za pomoci <code>LayoutInflater</code>api. Následne, vytvorené rozhranie sa odovzdá do novo vytvoreného objektu <code>ViewHolder</code>, ktorý má za úlohu nájsť a udržiavať inštantcie jednotlyvých prkov, ktoré tvoria jeden riadok.  Vytvorený objekt <code>ViewHolder</code> sa  odovzdá a daľej ho už spravuje adaptér recyclerview.</p>
+<p>Užitvateľské rozhranie jedného riadku sa vytvára v metóde <code>onCreateViewHolder</code> za pomoci <code>LayoutInflater</code>api. Následne, vytvorené rozhranie sa odovzdá do novo vytvoreného objektu <code>ViewHolder</code>, ktorý má za úlohu nájsť a udržiavať inštantcie jednotlivých prkov, ktoré tvoria jeden riadok.  Vytvorený objekt <code>ViewHolder</code> sa  odovzdá a daľej ho už spravuje adaptér recyclerview.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3

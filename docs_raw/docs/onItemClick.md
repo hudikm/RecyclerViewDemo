@@ -93,11 +93,10 @@ Na to aby sme mohli spracovať udalosť musíme v triede  `MyRecipeRecyclerViewA
 
 ### 2.1 Implentácia rozhrania v hlavnej aktivite
 
-Ak chceme udalosť, že používateľ klikol na recept spracovať v hlavnej aktivite, musíme implementovať rozhranie v triede prislúchajúcej hlavnej aktivite `MainActivity`. Udalosť obslúžime zobrazíním názvu receptu pomocou grafického prvku `Toas`.
+Ak chceme udalosť, že používateľ klikol na recept spracovať v hlavnej aktivite, musíme implementovať rozhranie v triede prislúchajúcej hlavnej aktivite `MainActivity`. Udalosť obslúžime zobrazením názvu receptu pomocou grafického prvku `Toast`.
 
 ```java
 public class MainActivity extends AppCompatActivity implements MyRecipeRecyclerViewAdapter.OnRecipeListInteraction {
-
 
     @Override
     public void onRecipeClick(int position) {

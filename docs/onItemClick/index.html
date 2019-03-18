@@ -515,16 +515,14 @@
 </td></tr></table>
 
 <h3 id="21-implentacia-rozhrania-v-hlavnej-aktivite">2.1 Implentácia rozhrania v hlavnej aktivite<a class="headerlink" href="#21-implentacia-rozhrania-v-hlavnej-aktivite" title="Permanent link">&para;</a></h3>
-<p>Ak chceme udalosť, že používateľ klikol na recept spracovať v hlavnej aktivite, musíme implementovať rozhranie v triede prislúchajúcej hlavnej aktivite <code>MainActivity</code>. Udalosť obslúžime zobrazíním názvu receptu pomocou grafického prvku <code>Toas</code>.</p>
+<p>Ak chceme udalosť, že používateľ klikol na recept spracovať v hlavnej aktivite, musíme implementovať rozhranie v triede prislúchajúcej hlavnej aktivite <code>MainActivity</code>. Udalosť obslúžime zobrazením názvu receptu pomocou grafického prvku <code>Toast</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
 5
 6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="kd">implements</span> <span class="n">MyRecipeRecyclerViewAdapter</span><span class="o">.</span><span class="na">OnRecipeListInteraction</span> <span class="o">{</span>
-
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="kd">implements</span> <span class="n">MyRecipeRecyclerViewAdapter</span><span class="o">.</span><span class="na">OnRecipeListInteraction</span> <span class="o">{</span>
 
     <span class="nd">@Override</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onRecipeClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>

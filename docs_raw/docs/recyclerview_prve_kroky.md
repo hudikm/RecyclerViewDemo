@@ -16,11 +16,11 @@ Použitie RecyclerView má nasledujúce kľúčové kroky:
 
 5. Vytvorte `RecyclerView.Adapter` a `ViewHolder` na vykreslenie položky
 
-6. Pripojte adaptér zo zdrojom údajov a nasledne ho odovzdejte RecyclerView
+6. Pripojte adaptér so zdrojom údajov a nasledne ho odovzdejte RecyclerView
 
    
 
-## 1. Pridanie support kniznice
+## 1. Pridanie support knižnice
 
 `app/build.gradle`
 
@@ -97,7 +97,7 @@ public class Recipe {
 
 ## 3. Vytvorenie RecyclerView v ramci layout súbora
 
-V súbore `./main/res/layout/recycler_list_layout.xml` vytvorte RecycleView
+V súbore `./main/res/layout/recycler_list_layout.xml` vytvorte RecyclerView
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -115,7 +115,7 @@ V súbore `./main/res/layout/recycler_list_layout.xml` vytvorte RecycleView
 
 Tento layout súbor môže byť vytvorený v `/res/layout/fragment_recipe_item.xml` a bude vykreslený pre každý riadok.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -223,7 +223,7 @@ public class MyRecipeRecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder
 
 ### 5.3 Získanie a uloženie zoznamu receptov
 
-Pridajte do triedy `MyRecipeRecyclerViewAdapter`nový privátny atribút typu `List<Recipe> recipes` a následneho inicializujte ako parameter konštruktora.
+Pridajte do triedy `MyRecipeRecyclerViewAdapter`nový privátny atribút typu `List<Recipe> recipes` a následne ho inicializujte ako parameter konštruktora.
 
 ```java
 public class MyRecipeRecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
@@ -243,7 +243,7 @@ public class MyRecipeRecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder
 
 ### 5.4 Vytvorenie UI zobrazeného riadku
 
-Užitvateľské rozhranie jedného riadku sa vytvára v metóde `onCreateViewHolder` za pomoci `LayoutInflater`api. Následne, vytvorené rozhranie sa odovzdá do novo vytvoreného objektu `ViewHolder`, ktorý má za úlohu nájsť a udržiavať inštantcie jednotlyvých prkov, ktoré tvoria jeden riadok.  Vytvorený objekt `ViewHolder` sa  odovzdá a daľej ho už spravuje adaptér recyclerview.
+Užitvateľské rozhranie jedného riadku sa vytvára v metóde `onCreateViewHolder` za pomoci `LayoutInflater`api. Následne, vytvorené rozhranie sa odovzdá do novo vytvoreného objektu `ViewHolder`, ktorý má za úlohu nájsť a udržiavať inštantcie jednotlivých prkov, ktoré tvoria jeden riadok.  Vytvorený objekt `ViewHolder` sa  odovzdá a daľej ho už spravuje adaptér recyclerview.
 
 ```java
  	@NonNull

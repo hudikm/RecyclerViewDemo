@@ -8,7 +8,7 @@ Naklonovanie projektu z GIT repozitára.
 
 Url: <https://github.com/hudikm/RecyclerViewDemo>
 
-**Po naklonovaní prenite na branch: `start`**
+**Po naklonovaní prepnite na branch: `start`**
 
 **`VCS--> Git--> Branches`**
 

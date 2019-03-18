@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity implements MyRecipeRecyclerV
                     .replace(R.id.fragment_container, new ListFragment(), "listFragment")
                     .commit();
         }
-
-
     }
 
     @Override
